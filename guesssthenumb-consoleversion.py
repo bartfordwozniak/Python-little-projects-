@@ -1,3 +1,7 @@
+
+#niedokoczony jeden tryb gry
+
+
 import random as r
 
 def introduction():
