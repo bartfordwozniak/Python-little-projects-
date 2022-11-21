@@ -44,7 +44,7 @@ def ai_is_guessing():
         elif player_numb == 2:
             high = input("CZy większa?\n 1. Tak\n 2. Nie")
             if high == 1:
-                print ("chuj")
+                print ("khem")
 
 mode_choosing()
 
