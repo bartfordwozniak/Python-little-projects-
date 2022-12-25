@@ -8,6 +8,20 @@ EMPTY = " "
 TIE = "TIE"
 NUM_SQUARES = 9
 
+def legal_moves(board):
+    moves = []
+    for square in range(NUM_SQUARES):
+        if board[square] == EMPTY:
+            moves.append(square)
+    return moves
+
+def ask_number(question, low, high):
+    """Nadanie liczby z zakresu"""
+    response = None
+    while response not in range(low, high):
+        response = int( input(" question" ))
+    return response
+
 def display_instrukt():
     print(
         """
@@ -24,7 +38,7 @@ def ask_yes_no(question):
     """Pytanie tak/nie"""
     response = None
     while response not in ("t","n"):
-        response = int(input(question))
+        response = int(input("Podaj liczbę z zakresu od {} do {}: ".format(low, high)))
     return response
 
 def pieces():
